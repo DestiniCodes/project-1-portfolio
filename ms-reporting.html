@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MS Reporting | Destini Harkins</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: '#EF87AB',
+            dark: '#111111',
+            pistachio: '#93C47D',
+            sage: '#FDE8F0',
+            charcoal: '#0D0D0D',
+            offwhite: '#FFFFFF',
+          },
+          fontFamily: {
+            heading: ['Fraunces', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="font-body bg-offwhite text-charcoal">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full bg-offwhite shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="font-heading text-xl font-bold text-charcoal">Destini Harkins</a>
+      <ul class="hidden md:flex gap-8 items-center">
+        <li><a href="index.html" class="text-charcoal hover:text-emerald transition-colors duration-200">Home</a></li>
+        <li><a href="projects.html" class="text-charcoal hover:text-emerald transition-colors duration-200">Coding Projects</a></li>
+        <li><a href="pm-case-studies.html" class="text-emerald font-semibold">PM Case Studies</a></li>
+        <li><a href="about.html" class="text-charcoal hover:text-emerald transition-colors duration-200">About</a></li>
+        <li><a href="contact.html" class="text-charcoal hover:text-emerald transition-colors duration-200">Contact</a></li>
+        <li><a href="assets/resume.pdf" class="bg-emerald text-white px-5 py-2 rounded hover:bg-dark transition-colors duration-200">Resume</a></li>
+      </ul>
+      <button class="md:hidden text-charcoal text-2xl"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="pt-28 pb-4 bg-offwhite">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-sm text-gray-400">
+        <a href="pm-case-studies.html" class="hover:text-emerald transition-colors duration-200">PM Case Studies</a>
+        <span class="mx-2">/</span>
+        <span class="text-charcoal">Mississippi State Reporting Field Mapping</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="py-16 bg-offwhite">
+    <div class="max-w-4xl mx-auto px-6">
+      <span class="text-xs bg-sage text-emerald px-3 py-1 rounded-full font-semibold uppercase tracking-widest">Case Study</span>
+      <h1 class="font-heading text-5xl font-bold text-charcoal mt-4 mb-6 leading-tight">
+        Mississippi State Reporting Field Mapping
+      </h1>
+      <p class="text-gray-600 text-xl leading-relaxed">
+        Supported data alignment efforts between internal systems and external reporting
+        requirements through structured field mapping, documentation, and stakeholder validation.
+      </p>
+    </div>
+  </section>
+
+  <!-- TAGS -->
+  <section class="py-8 bg-white border-y border-gray-100">
+    <div class="max-w-4xl mx-auto px-6 flex flex-wrap gap-3">
+      <span class="text-xs bg-sage text-emerald px-4 py-2 rounded-full font-semibold">Data Alignment</span>
+      <span class="text-xs bg-sage text-emerald px-4 py-2 rounded-full font-semibold">Systems Thinking</span>
+      <span class="text-xs bg-sage text-emerald px-4 py-2 rounded-full font-semibold">Stakeholder Validation</span>
+      <span class="text-xs bg-sage text-emerald px-4 py-2 rounded-full font-semibold">Documentation</span>
+      <span class="text-xs bg-sage text-emerald px-4 py-2 rounded-full font-semibold">Analytical Thinking</span>
+    </div>
+  </section>
+
+  <!-- CASE STUDY CONTENT -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6 space-y-16">
+
+      <!-- OVERVIEW -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-8 bg-sage rounded-lg flex items-center justify-center">
+            <i class="fas fa-circle-info text-emerald text-sm"></i>
+          </div>
+          <h2 class="font-heading text-2xl font-bold text-charcoal">Overview</h2>
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          This project involved supporting the alignment of internal organizational data with
+          Mississippi state reporting requirements. The work required careful analysis of data
+          fields across systems, structured documentation, and close collaboration with
+          stakeholders to validate accuracy before submission.
+        </p>
+      </div>
+
+      <!-- CHALLENGE -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-8 bg-sage rounded-lg flex items-center justify-center">
+            <i class="fas fa-triangle-exclamation text-emerald text-sm"></i>
+          </div>
+          <h2 class="font-heading text-2xl font-bold text-charcoal">The Challenge</h2>
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          Internal data systems did not map cleanly to external state reporting fields,
+          creating a gap between what the organization tracked and what the state required.
+          This required methodical analysis, cross-referencing, and stakeholder alignment
+          to ensure accurate and compliant reporting.
+        </p>
+      </div>
+
+      <!-- MY ROLE -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-8 bg-sage rounded-lg flex items-center justify-center">
+            <i class="fas fa-user text-emerald text-sm"></i>
+          </div>
+          <h2 class="font-heading text-2xl font-bold text-charcoal">My Role</h2>
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          Supported data alignment efforts by leading field mapping documentation,
+          coordinating stakeholder validation sessions, and ensuring that internal
+          data structures were accurately reflected in state reporting outputs.
+        </p>
+      </div>
+
+      <!-- OUTCOME -->
+      <div class="bg-dark rounded-2xl p-10">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-8 h-8 bg-emerald rounded-lg flex items-center justify-center">
+            <i class="fas fa-chart-line text-white text-sm"></i>
+          </div>
+          <h2 class="font-heading text-2xl font-bold text-white">Outcome</h2>
+        </div>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <i class="fas fa-arrow-right text-emerald mt-1 shrink-0"></i>
+            <p class="text-gray-300">Successfully mapped internal data fields to state reporting requirements</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fas fa-arrow-right text-emerald mt-1 shrink-0"></i>
+            <p class="text-gray-300">Created structured documentation that could be reused for future reporting cycles</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fas fa-arrow-right text-emerald mt-1 shrink-0"></i>
+            <p class="text-gray-300">Validated data accuracy through stakeholder review sessions</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fas fa-arrow-right text-emerald mt-1 shrink-0"></i>
+            <p class="text-gray-300">Reduced risk of reporting errors through methodical gap analysis</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- REFLECTION -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-8 bg-sage rounded-lg flex items-center justify-center">
+            <i class="fas fa-lightbulb text-emerald text-sm"></i>
+          </div>
+          <h2 class="font-heading text-2xl font-bold text-charcoal">Reflection</h2>
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          This project sharpened my analytical thinking and reinforced the importance of
+          precision in data work. Understanding how systems talk to each other — and where
+          they don't — is a skill that translates directly into software development,
+          particularly in backend data modeling and API design.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NAVIGATION BETWEEN CASE STUDIES -->
+  <section class="py-12 bg-offwhite">
+    <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-4">
+      <a href="clinical-foundations.html" class="flex items-center gap-2 text-emerald hover:text-dark font-semibold transition-colors duration-200">
+        <i class="fas fa-arrow-left"></i> Previous: Clinical Foundations
+      </a>
+      <a href="pm-case-studies.html" class="flex items-center gap-2 text-emerald hover:text-dark font-semibold transition-colors duration-200">
+        All Case Studies <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark border-t border-gray-700 py-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+          <p class="font-heading text-white text-lg font-bold">Destini Harkins</p>
+          <p class="text-gray-400 text-sm mt-1">Systems thinker. Quality-driven. Developer in progress.</p>
+        </div>
+        <ul class="flex flex-wrap justify-center gap-6 text-sm">
+          <li><a href="index.html" class="text-gray-400 hover:text-sage transition-colors duration-200">Home</a></li>
+          <li><a href="projects.html" class="text-gray-400 hover:text-sage transition-colors duration-200">Coding Projects</a></li>
+          <li><a href="pm-case-studies.html" class="text-gray-400 hover:text-sage transition-colors duration-200">PM Case Studies</a></li>
+          <li><a href="about.html" class="text-gray-400 hover:text-sage transition-colors duration-200">About</a></li>
+          <li><a href="contact.html" class="text-gray-400 hover:text-sage transition-colors duration-200">Contact</a></li>
+        </ul>
+        <div class="flex gap-5">
+          <a href="https://www.linkedin.com/in/destiniharkins" target="_blank" class="text-gray-400 hover:text-sage transition-colors duration-200 text-xl"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/DestiniCodes" target="_blank" class="text-gray-400 hover:text-sage transition-colors duration-200 text-xl"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+        <p class="text-gray-500 text-sm">© 2025 Destini Harkins. Built with HTML, Tailwind CSS & a lot of determination.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

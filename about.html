@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Destini Harkins</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: '#EF87AB',
+            dark: '#111111',
+            pistachio: '#93C47D',
+            sage: '#FDE8F0',
+            charcoal: '#0D0D0D',
+            offwhite: '#FFFFFF',
+          },
+          fontFamily: {
+            heading: ['Fraunces', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="font-body bg-offwhite text-charcoal">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full bg-offwhite shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="font-heading text-xl font-bold text-charcoal">Destini Harkins</a>
+      <ul class="hidden md:flex gap-8 items-center">
+        <li><a href="index.html" class="text-charcoal hover:text-emerald transition-colors duration-200">Home</a></li>
+        <li><a href="projects.html" class="text-charcoal hover:text-emerald transition-colors duration-200">Coding Projects</a></li>
+        <li><a href="pm-case-studies.html" class="text-charcoal hover:text-emerald transition-colors duration-200">PM Case Studies</a></li>
+        <li><a href="about.html" class="text-emerald font-semibold">About</a></li>
+        <li><a href="contact.html" class="text-charcoal hover:text-emerald transition-colors duration-200">Contact</a></li>
+        <li><a href="assets/resume.pdf" class="bg-emerald text-white px-5 py-2 rounded hover:bg-dark transition-colors duration-200">Resume</a></li>
+      </ul>
+      <button class="md:hidden text-charcoal text-2xl"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="pt-32 pb-12 bg-offwhite">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="section-badge">My Story</p>
+      <h1 class="font-heading text-5xl font-bold text-charcoal mb-4">About Me</h1>
+      <p class="text-gray-600 text-lg max-w-2xl leading-relaxed">
+        From managing systems to building and validating them.
+      </p>
+    </div>
+  </section>
+
+  <!-- MY JOURNEY -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+        <div>
+          <!-- PHOTO — visible on mobile, hidden on desktop (desktop shows in right column) -->
+          <div class="photo-frame-sm mb-8 lg:hidden">
+            <img src="assets/profile.jpeg" alt="Destini Harkins" />
+          </div>
+          <h2 class="font-heading text-3xl font-bold text-charcoal mb-6">My Journey</h2>
+          <div class="space-y-5 text-gray-600 leading-relaxed">
+            <p>
+              I began my career in project management, where I developed a strong foundation
+              in structured execution, cross-functional coordination, and systems thinking.
+            </p>
+            <p>
+              Over time, I led initiatives involving training integration, curriculum rollout,
+              vendor collaboration, and quality assurance testing. Much of my work required
+              identifying gaps, validating processes, and ensuring successful implementation
+              across teams and systems.
+            </p>
+            <p>
+              As I grew in my role, I became increasingly interested in how digital systems
+              are built, tested, and improved.
+            </p>
+            <p>
+              Today, I operate in a hybrid space — bringing the discipline of a project manager
+              and the curiosity of a developer to every challenge I take on.
+            </p>
+          </div>
+        </div>
+
+        <!-- PHOTO (desktop) + IDENTITY CARDS -->
+        <div class="space-y-6">
+
+          <!-- Photo — desktop only -->
+          <div class="hidden lg:block photo-frame-sm mx-auto">
+            <img src="assets/profile.jpeg" alt="Destini Harkins" />
+          </div>
+
+          <!-- Identity cards -->
+          <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl p-6 border-t-4 border-pistachio">
+            <i class="fas fa-sitemap text-pistachio text-2xl mb-4"></i>
+            <h3 class="font-heading text-lg font-bold text-charcoal mb-2">Technical Project Manager</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Structured execution and cross-functional leadership</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border-t-4 border-emerald">
+            <i class="fas fa-magnifying-glass text-emerald text-2xl mb-4"></i>
+            <h3 class="font-heading text-lg font-bold text-charcoal mb-2">Systems Coordinator</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Aligning people, processes, and tools for delivery</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border-t-4 border-emerald">
+            <i class="fas fa-check-double text-emerald text-2xl mb-4"></i>
+            <h3 class="font-heading text-lg font-bold text-charcoal mb-2">QA-Minded Thinker</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Validation, testing, and gap identification</p>
+          </div>
+          <div class="bg-dark rounded-xl p-6 border-t-4 border-pistachio">
+            <i class="fas fa-code text-pistachio text-2xl mb-4"></i>
+            <h3 class="font-heading text-lg font-bold text-white mb-2">Aspiring Developer</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Building front-end skills with HTML, CSS, JS & React</p>
+          </div>
+        </div><!-- end grid -->
+        </div><!-- end space-y-6 -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HYBRID IDENTITY -->
+  <section class="py-20 bg-dark">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="section-badge-dark">Why Development</p>
+      <h2 class="font-heading text-4xl font-bold text-white mb-6 max-w-3xl mx-auto">
+        I'm especially interested in QA and front-end development
+      </h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed mb-12">
+        Because they combine structure, logic, and user experience in a way that aligns
+        with how I naturally approach problem solving. Testing isn't just checking boxes —
+        it's understanding how a system should work and making sure it does.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+        <div class="bg-offwhite/5 border border-gray-700 rounded-xl p-6">
+          <i class="fas fa-brain text-emerald text-2xl mb-4"></i>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">Structured Thinking</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Every project I've led has required me to think in systems — inputs, outputs, dependencies, risks. That's exactly how good code works too.
+          </p>
+        </div>
+        <div class="bg-offwhite/5 border border-gray-700 rounded-xl p-6">
+          <i class="fas fa-users text-emerald text-2xl mb-4"></i>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">User Focus</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Whether managing a program or building an interface, my work has always been about the people on the receiving end of the experience.
+          </p>
+        </div>
+        <div class="bg-offwhite/5 border border-gray-700 rounded-xl p-6">
+          <i class="fas fa-arrow-trend-up text-emerald text-2xl mb-4"></i>
+          <h3 class="font-heading text-lg font-bold text-white mb-2">Continuous Growth</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            I'm not starting from scratch — I'm adding a new skill set to a strong professional foundation. That combination is rare and valuable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-offwhite text-center">
+    <div class="max-w-xl mx-auto px-6">
+      <h2 class="font-heading text-4xl font-bold text-charcoal mb-4">Let's Connect</h2>
+      <p class="text-gray-600 mb-8 leading-relaxed">
+        I'm open to opportunities in project management, QA, and junior development roles.
+        If you think we'd work well together, I'd love to hear from you.
+      </p>
+      <a href="contact.html" class="bg-emerald text-white px-8 py-3 rounded font-semibold hover:bg-dark transition-colors duration-300">
+        Get In Touch
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark border-t border-gray-700 py-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+          <p class="font-heading text-white text-lg font-bold">Destini Harkins</p>
+          <p class="text-gray-400 text-sm mt-1">Systems thinker. Quality-driven. Developer in progress.</p>
+        </div>
+        <ul class="flex flex-wrap justify-center gap-6 text-sm">
+          <li><a href="index.html" class="text-gray-400 hover:text-sage transition-colors duration-200">Home</a></li>
+          <li><a href="projects.html" class="text-gray-400 hover:text-sage transition-colors duration-200">Coding Projects</a></li>
+          <li><a href="pm-case-studies.html" class="text-gray-400 hover:text-sage transition-colors duration-200">PM Case Studies</a></li>
+          <li><a href="about.html" class="text-gray-400 hover:text-sage transition-colors duration-200">About</a></li>
+          <li><a href="contact.html" class="text-gray-400 hover:text-sage transition-colors duration-200">Contact</a></li>
+        </ul>
+        <div class="flex gap-5">
+          <a href="https://www.linkedin.com/in/destiniharkins" target="_blank" class="text-gray-400 hover:text-sage transition-colors duration-200 text-xl"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/DestiniCodes" target="_blank" class="text-gray-400 hover:text-sage transition-colors duration-200 text-xl"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+        <p class="text-gray-500 text-sm">© 2025 Destini Harkins. Built with HTML, Tailwind CSS & a lot of determination.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

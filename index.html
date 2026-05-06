@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destini Harkins | PM & Developer</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: '#EF87AB',
+            dark: '#111111',
+            pistachio: '#93C47D',
+            sage: '#FDE8F0',
+            charcoal: '#0D0D0D',
+            offwhite: '#FFFFFF',
+          },
+          fontFamily: {
+            heading: ['Fraunces', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body class="font-body bg-offwhite text-charcoal">
+
+  <nav class="fixed top-0 w-full bg-offwhite shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+      <a href="index.html" class="font-heading text-xl font-bold text-charcoal">
+        Destini Harkins
+      </a>
+
+      <ul class="hidden md:flex gap-8 items-center">
+        <li><a href="index.html" class="text-charcoal hover:text-emerald transition-colors duration-200">Home</a></li>
+        <li><a href="projects.html" class="text-charcoal hover:text-emerald transition-colors duration-200">Coding Projects</a></li>
+        <li><a href="pm-case-studies.html" class="text-charcoal hover:text-emerald transition-colors duration-200">PM Case Studies</a></li>
+        <li><a href="about.html" class="text-charcoal hover:text-emerald transition-colors duration-200">About</a></li>
+        <li><a href="contact.html" class="text-charcoal hover:text-emerald transition-colors duration-200">Contact</a></li>
+        <li>
+          <a href="assets/resume.pdf" 
+             class="bg-emerald text-white px-5 py-2 rounded hover:bg-dark transition-colors duration-200">
+            Resume
+          </a>
+        </li>
+      </ul>
+
+      <button class="md:hidden text-charcoal text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    </div>
+  </nav>
+  <!-- HERO -->
+  <section class="hero-grid pt-32 pb-20 min-h-screen flex items-center bg-offwhite">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <!-- LEFT: Text -->
+        <div>
+          <p class="text-emerald uppercase tracking-widest text-sm font-semibold mb-5 animate-fade-up delay-1">
+            Portfolio
+          </p>
+          <h1 class="font-heading text-6xl lg:text-7xl font-bold text-charcoal leading-none mb-5 animate-fade-up delay-2">
+            Destini<br/><span class="marker-pink">Harkins</span>
+          </h1>
+          <p class="font-heading italic text-2xl text-charcoal font-light mb-6 animate-fade-up delay-3">
+            Technical PM → QA Analyst & <span class="marker-pistachio not-italic font-bold">Developer</span> in Progress
+          </p>
+          <p class="text-base text-gray-500 leading-relaxed mb-8 max-w-lg animate-fade-up delay-4">
+            I build structured systems, support quality-driven program delivery,
+            and am transitioning into software development. My background in
+            cross-functional project execution and testing-heavy program work
+            has shaped how I approach systems, structure, and user experience.
+          </p>
+          <div class="flex flex-wrap gap-4 animate-fade-up delay-5">
+            <a href="#work"
+               class="bg-charcoal text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald transition-colors duration-300">
+              View My Work
+            </a>
+            <a href="assets/resume.pdf"
+               class="border-2 border-charcoal text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors duration-300">
+              Download Resume
+            </a>
+          </div>
+          <div class="flex gap-6 mt-8 animate-fade-up delay-5">
+            <a href="https://www.linkedin.com/in/destiniharkins"
+               target="_blank"
+               class="text-charcoal hover:text-emerald transition-colors duration-200 text-2xl">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/DestiniCodes"
+               target="_blank"
+               class="text-charcoal hover:text-emerald transition-colors duration-200 text-2xl">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Photo -->
+        <div class="hidden lg:flex justify-center animate-fade-right delay-3">
+          <div class="photo-frame w-96 h-[520px]">
+            <img src="assets/profile.jpeg" alt="Destini Harkins — Technical Project Manager and Developer" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE TICKER -->
+  <div class="bg-charcoal py-4 overflow-hidden">
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <span class="text-offwhite text-sm font-semibold uppercase tracking-widest px-8">Systems Thinker</span>
+        <span class="text-emerald px-4">·</span>
+        <span class="text-offwhite text-sm font-semibold uppercase tracking-widest px-8">Quality Driven</span>
+        <span class="text-emerald px-4">·</span>
+        <span class="text-offwhite text-sm font-semibold uppercase tracking-widest px-8">Developer in Progress</span>
+        <span class="text-emerald px-4">·</span>
+        <span class="text-offwhite text-sm font-semibold uppercase tracking-widest px-8">PM Background</span>
+        <span class="text-emerald px-4">·</span>
+        <span class="text-offwhite text-sm font-semibold uppercase tracking-widest px-8">QA Mindset</span>
+        <span class="text-emerald px-4">·</span>
+        <span class="text-offwhite text-sm font-semibold uppercase tracking-widest px-8">Cross-Functional Leader</span>
+        <span class="text-emerald px-4">·</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="text-offwhite text-sm font-semibold uppercase tracking-widest px-8">Systems Thinker</span>
+        <span class="text-emerald px-4">·</span>
+        <span class="text-offwhite text-sm font-semibold uppercase tracking-widest px-8">Quality Driven</span>
+        <span class="text-emerald px-4">·</span>
+        <span class="text-offwhite text-sm font-semibold uppercase tracking-widest px-8">Developer in Progress</span>
+        <span class="text-emerald px-4">·</span>
+        <span class="text-offwhite text-sm font-semibold uppercase tracking-widest px-8">PM Background</span>
+        <span class="text-emerald px-4">·</span>
+        <span class="text-offwhite text-sm font-semibold uppercase tracking-widest px-8">QA Mindset</span>
+        <span class="text-emerald px-4">·</span>
+        <span class="text-offwhite text-sm font-semibold uppercase tracking-widest px-8">Cross-Functional Leader</span>
+        <span class="text-emerald px-4">·</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="text-center mb-16">
+      <p class="section-badge">
+        What I Do
+      </p>
+      <h2 class="font-heading text-4xl font-bold text-charcoal mb-6">
+        Strategy Meets Systems & Quality
+      </h2>
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+        My experience sits at the intersection of program delivery, systems coordination, 
+        and quality assurance. I specialize in bringing structure to complex initiatives 
+        and ensuring that solutions are implemented with clarity, consistency, and user impact in mind.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <div class="bg-white rounded-xl p-8 hover:shadow-md transition-shadow duration-300 border-l-4 border-pistachio">
+        <div class="w-12 h-12 bg-pistachio rounded-lg flex items-center justify-center mb-6">
+          <i class="fas fa-sitemap text-white text-xl"></i>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-charcoal mb-3">
+          Program & Systems Coordination
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          I lead cross-functional initiatives from planning through implementation,
+          aligning stakeholders, vendors, and internal teams to ensure smooth delivery
+          and measurable outcomes.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl p-8 hover:shadow-md transition-shadow duration-300 border-l-4 border-emerald">
+        <div class="w-12 h-12 bg-emerald rounded-lg flex items-center justify-center mb-6">
+          <i class="fas fa-people-arrows text-white text-xl"></i>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-charcoal mb-3">
+          Training, Change Management & Implementation Support
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          I've worked closely with training and development teams to integrate programs
+          into LMS environments, support rollout planning, and lead change management
+          efforts that improve adoption and consistency.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl p-8 hover:shadow-md transition-shadow duration-300 border-l-4 border-emerald">
+        <div class="w-12 h-12 bg-emerald rounded-lg flex items-center justify-center mb-6">
+          <i class="fas fa-check-double text-white text-xl"></i>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-charcoal mb-3">
+          QA Mindset & Structured Thinking
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          Through curriculum rollouts, system alignment work, and structured testing
+          cycles, I've developed a strong focus on validation, process accuracy, and
+          identifying gaps before implementation.
+        </p>
+      </div>
+
+      <div class="bg-dark rounded-xl p-8 hover:shadow-md transition-shadow duration-300 border-l-4 border-pistachio">
+        <div class="w-12 h-12 bg-pistachio rounded-lg flex items-center justify-center mb-6">
+          <i class="fas fa-code text-white text-xl"></i>
+        </div>
+        <h3 class="font-heading text-xl font-bold text-white mb-3">
+          Development in Progress
+        </h3>
+        <p class="text-gray-400 leading-relaxed">
+          I am currently building responsive web applications using HTML, CSS, Tailwind, 
+          and modern UI practices, with a focus on clean structure, usability, and 
+          front-end fundamentals.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="work" class="py-20 bg-offwhite">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="text-center mb-16">
+      <p class="section-badge">
+        Selected Work
+      </p>
+      <h2 class="font-heading text-4xl font-bold text-charcoal mb-4">
+        Featured Work
+      </h2>
+      <p class="text-gray-600 text-lg">
+        A mix of systems coordination, implementation support, and technical development.
+      </p>
+    </div>
+
+    <!-- CODING PROJECTS -->
+    <div class="mb-16">
+      <h3 class="font-heading text-2xl font-bold text-charcoal mb-8 flex items-center gap-3">
+        <i class="fas fa-code text-emerald"></i>
+        Coding Projects
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- BRANCHING STORY GAME -->
+        <div class="bg-white rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300 border-t-4 border-pistachio">
+          <div class="h-48 bg-dark flex items-center justify-center">
+            <i class="fas fa-map text-emerald text-5xl"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex gap-2 mb-3">
+              <span class="flex items-center gap-1 text-xs bg-sage text-emerald px-3 py-1 rounded-full">
+                <i class="devicon-javascript-plain text-yellow-400"></i> JavaScript
+              </span>
+              <span class="flex items-center gap-1 text-xs bg-sage text-emerald px-3 py-1 rounded-full">
+                <i class="devicon-html5-plain text-orange-500"></i> HTML
+              </span>
+            </div>
+            <h4 class="font-heading text-lg font-bold text-charcoal mb-2">Branching Story Game</h4>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              An interactive choose-your-own-adventure style game built with vanilla JavaScript and dynamic DOM manipulation.
+            </p>
+            <div class="flex gap-3">
+              <a href="https://github.com/DestiniCodes/branching-story-lab" target="_blank"
+                 class="text-emerald hover:text-dark text-sm font-semibold transition-colors duration-200">
+                <i class="fab fa-github mr-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PLACEHOLDER 2 -->
+        <div class="bg-white rounded-xl overflow-hidden border-2 border-dashed border-gray-300">
+          <div class="h-48 bg-gray-100 flex items-center justify-center">
+            <i class="fas fa-clock text-gray-300 text-5xl"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex gap-2 mb-3">
+              <span class="text-xs bg-gray-100 text-gray-400 px-3 py-1 rounded-full">Coming Soon</span>
+            </div>
+            <h4 class="font-heading text-lg font-bold text-gray-300 mb-2">Project Coming Soon</h4>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+              This project is currently in progress. Check back soon!
+            </p>
+          </div>
+        </div>
+
+        <!-- BOOK FESTIVAL -->
+        <div class="bg-white rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300 border-t-4 border-emerald">
+          <div class="h-48 bg-dark flex items-center justify-center">
+            <i class="fas fa-book-open text-emerald text-5xl"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex gap-2 mb-3">
+              <span class="flex items-center gap-1 text-xs bg-sage text-emerald px-3 py-1 rounded-full">
+                <i class="devicon-css3-plain text-blue-500"></i> CSS
+              </span>
+              <span class="flex items-center gap-1 text-xs bg-sage text-emerald px-3 py-1 rounded-full">
+                <i class="devicon-tailwindcss-plain text-cyan-400"></i> Tailwind
+              </span>
+            </div>
+            <h4 class="font-heading text-lg font-bold text-charcoal mb-2">Book Festival</h4>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Event landing page built with Tailwind CSS featuring responsive layouts and custom styling.
+            </p>
+            <div class="flex gap-3">
+              <a href="#" class="text-emerald hover:text-dark text-sm font-semibold transition-colors duration-200">
+                <i class="fab fa-github mr-1"></i>GitHub
+              </a>
+              <a href="#" class="text-emerald hover:text-dark text-sm font-semibold transition-colors duration-200">
+                <i class="fas fa-external-link-alt mr-1"></i>Live
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="projects.html" class="border-2 border-emerald text-emerald px-8 py-3 rounded font-semibold hover:bg-sage transition-colors duration-300">
+          View All Coding Projects
+        </a>
+      </div>
+    </div>
+
+    <!-- PM CASE STUDIES -->
+    <div>
+      <h3 class="font-heading text-2xl font-bold text-charcoal mb-8 flex items-center gap-3">
+        <i class="fas fa-briefcase text-emerald"></i>
+        PM Case Studies
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="bg-dark rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 border-t-4 border-emerald">
+          <div class="w-10 h-10 bg-emerald rounded-lg flex items-center justify-center mb-6">
+            <i class="fas fa-dollar-sign text-white"></i>
+          </div>
+          <h4 class="font-heading text-lg font-bold text-white mb-3">
+            Oregon Financial Literacy Initiative
+          </h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Led coordination of a $150,000 state-funded pilot serving 112 youth, 
+            focused on financial education, structured incentives, and impact tracking.
+          </p>
+          <a href="financial-literacy.html" class="text-emerald hover:text-sage text-sm font-semibold transition-colors duration-200">
+            Read Case Study <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+
+        <div class="bg-dark rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 border-t-4 border-pistachio">
+          <div class="w-10 h-10 bg-pistachio rounded-lg flex items-center justify-center mb-6">
+            <i class="fas fa-hospital text-white"></i>
+          </div>
+          <h4 class="font-heading text-lg font-bold text-white mb-3">
+            Clinical Foundations Curriculum Integration
+          </h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Supported LMS curriculum integration, vendor coordination, change management 
+            planning, and QA testing cycles with clinical experts.
+          </p>
+          <a href="clinical-foundations.html" class="text-emerald hover:text-sage text-sm font-semibold transition-colors duration-200">
+            Read Case Study <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+
+        <div class="bg-dark rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 border-t-4 border-emerald">
+          <div class="w-10 h-10 bg-emerald rounded-lg flex items-center justify-center mb-6">
+            <i class="fas fa-chart-bar text-white"></i>
+          </div>
+          <h4 class="font-heading text-lg font-bold text-white mb-3">
+            Mississippi State Reporting Field Mapping
+          </h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Supported data alignment between internal systems and external reporting 
+            requirements through structured field mapping and stakeholder validation.
+          </p>
+          <a href="ms-reporting.html" class="text-emerald hover:text-sage text-sm font-semibold transition-colors duration-200">
+            Read Case Study <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="pm-case-studies.html" class="border-2 border-emerald text-emerald px-8 py-3 rounded font-semibold hover:bg-sage transition-colors duration-300">
+          View All Case Studies
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>    
+  <!-- CTA SECTION -->
+  <section class="py-20 bg-dark">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <p class="section-badge-dark">
+        Let's Connect
+      </p>
+      <h2 class="font-heading text-4xl lg:text-5xl font-bold text-white mb-6">
+        Ready to Work Together?
+      </h2>
+      <p class="text-gray-400 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+        Whether you're looking for a project manager, a QA-minded thinker, 
+        or a developer in progress — I'd love to connect.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="contact.html"
+           class="bg-emerald text-white px-8 py-3 rounded font-semibold hover:bg-emerald/80 transition-colors duration-300">
+          Get In Touch
+        </a>
+        <a href="assets/resume.pdf"
+           class="border-2 border-sage text-sage px-8 py-3 rounded font-semibold hover:bg-sage hover:text-dark transition-colors duration-300">
+          Download Resume
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark border-t border-gray-700 py-10">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+        <!-- Left — name and tagline -->
+        <div>
+          <p class="font-heading text-white text-lg font-bold">Destini Harkins</p>
+          <p class="text-gray-400 text-sm mt-1">
+            Systems thinker. Quality-driven. Developer in progress.
+          </p>
+        </div>
+
+        <!-- Center — nav links -->
+        <ul class="flex flex-wrap justify-center gap-6 text-sm">
+          <li><a href="index.html" class="text-gray-400 hover:text-sage transition-colors duration-200">Home</a></li>
+          <li><a href="projects.html" class="text-gray-400 hover:text-sage transition-colors duration-200">Coding Projects</a></li>
+          <li><a href="pm-case-studies.html" class="text-gray-400 hover:text-sage transition-colors duration-200">PM Case Studies</a></li>
+          <li><a href="about.html" class="text-gray-400 hover:text-sage transition-colors duration-200">About</a></li>
+          <li><a href="contact.html" class="text-gray-400 hover:text-sage transition-colors duration-200">Contact</a></li>
+        </ul>
+
+        <!-- Right — social icons -->
+        <div class="flex gap-5">
+          <a href="https://www.linkedin.com/in/destiniharkins"
+             target="_blank"
+             class="text-gray-400 hover:text-sage transition-colors duration-200 text-xl">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/DestiniCodes"
+             target="_blank"
+             class="text-gray-400 hover:text-sage transition-colors duration-200 text-xl">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom copyright -->
+      <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+        <p class="text-gray-500 text-sm">
+          © 2026 Destini Harkins. Built with HTML, Tailwind CSS & a lot of determination.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+</body>
+</html>
