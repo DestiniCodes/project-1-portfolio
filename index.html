@@ -50,7 +50,7 @@
         Destini Harkins
       </a>
 
-      <ul class="hidden md:flex gap-8 items-center">
+      <ul id="nav-menu" class="hidden md:flex gap-8 items-center">
         <li><a href="index.html" class="text-charcoal hover:text-emerald transition-colors duration-200">Home</a></li>
         <li><a href="projects.html" class="text-charcoal hover:text-emerald transition-colors duration-200">Coding Projects</a></li>
         <li><a href="pm-case-studies.html" class="text-charcoal hover:text-emerald transition-colors duration-200">PM Case Studies</a></li>
@@ -64,7 +64,7 @@
         </li>
       </ul>
 
-      <button class="md:hidden text-charcoal text-2xl">
+      <button id="hamburger-btn" class="md:hidden text-charcoal text-2xl">
         <i class="fas fa-bars"></i>
       </button>
 
@@ -289,19 +289,46 @@
           </div>
         </div>
 
-        <!-- PLACEHOLDER 2 -->
-        <div class="bg-white rounded-xl overflow-hidden border-2 border-dashed border-gray-300">
-          <div class="h-48 bg-gray-100 flex items-center justify-center">
-            <i class="fas fa-clock text-gray-300 text-5xl"></i>
+        <!-- SPINE — Personal Library App -->
+        <div class="bg-white rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300 border-t-4" style="border-color: #C4849E;">
+          <div class="h-48 flex items-center justify-center" style="background: linear-gradient(135deg, #F0E6EA 0%, #FAF7F2 100%);">
+            <div class="text-center">
+              <div style="font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: #C4849E; letter-spacing: -0.01em; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <svg width="32" height="32" viewBox="0 0 26 26" fill="none">
+                  <rect x="3" y="4" width="9" height="19" rx="2" fill="#C4849E" opacity="0.25"/>
+                  <rect x="7" y="3" width="9" height="19" rx="2" fill="#C4849E" opacity="0.5"/>
+                  <rect x="11" y="2" width="11" height="21" rx="2" fill="#C4849E"/>
+                  <rect x="13.5" y="7" width="5.5" height="1.4" rx="0.7" fill="white" opacity="0.85"/>
+                  <rect x="13.5" y="10.5" width="4" height="1.4" rx="0.7" fill="white" opacity="0.85"/>
+                  <rect x="13.5" y="14" width="6" height="1.4" rx="0.7" fill="white" opacity="0.85"/>
+                </svg>
+                Spine
+              </div>
+              <p style="font-size: 0.75rem; color: #8A8078; margin-top: 4px;">Your reading life, organized.</p>
+            </div>
           </div>
           <div class="p-6">
-            <div class="flex gap-2 mb-3">
-              <span class="text-xs bg-gray-100 text-gray-400 px-3 py-1 rounded-full">Coming Soon</span>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="flex items-center gap-1 text-xs bg-sage text-emerald px-3 py-1 rounded-full">
+                <i class="devicon-react-original text-cyan-400"></i> React
+              </span>
+              <span class="flex items-center gap-1 text-xs bg-sage text-emerald px-3 py-1 rounded-full">
+                <i class="devicon-javascript-plain text-yellow-400"></i> Context API
+              </span>
+              <span class="flex items-center gap-1 text-xs bg-sage text-emerald px-3 py-1 rounded-full">
+                <i class="fas fa-database" style="font-size:0.7rem;"></i> localStorage
+              </span>
             </div>
-            <h4 class="font-heading text-lg font-bold text-gray-300 mb-2">Project Coming Soon</h4>
-            <p class="text-gray-300 text-sm leading-relaxed mb-4">
-              This project is currently in progress. Check back soon!
+            <h4 class="font-heading text-lg font-bold text-charcoal mb-2">Spine — Personal Library App</h4>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              A full-featured reading tracker built in React. Search for books, track reading status, rate in 0.25 increments, organize into custom visual shelves, log start/end dates, and generate shareable annual reading stats.
             </p>
+            <div class="flex gap-3">
+              <a href="https://github.com/DestiniCodes/project-3-spine" target="_blank"
+                 class="text-emerald hover:text-dark text-sm font-semibold transition-colors duration-200">
+                <i class="fab fa-github mr-1"></i>GitHub
+              </a>
+            </div>
           </div>
         </div>
 
@@ -411,6 +438,77 @@
 
   </div>
 </section>    
+  <!-- SKILLS & TECHNOLOGIES -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-12">
+        <p class="section-badge">My Toolkit</p>
+        <h2 class="font-heading text-4xl font-bold text-charcoal mb-4">Skills & Technologies</h2>
+        <p class="text-gray-600 text-lg max-w-xl mx-auto leading-relaxed">
+          A growing stack built through real projects, program work, and continuous learning.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        <!-- Front-End Development -->
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 bg-pistachio rounded-lg flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-code text-white text-sm"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-charcoal">Front-End Development</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-badge"><i class="devicon-html5-plain text-orange-500"></i> HTML5</span>
+            <span class="skill-badge"><i class="devicon-css3-plain text-blue-500"></i> CSS3</span>
+            <span class="skill-badge"><i class="devicon-javascript-plain text-yellow-400"></i> JavaScript</span>
+            <span class="skill-badge"><i class="devicon-tailwindcss-plain text-cyan-400"></i> Tailwind CSS</span>
+            <span class="skill-badge"><i class="devicon-react-original text-sky-400"></i> React <span class="text-gray-400 text-xs">(learning)</span></span>
+            <span class="skill-badge"><i class="fas fa-mobile-alt text-emerald"></i> Responsive Design</span>
+          </div>
+        </div>
+
+        <!-- Project & Program Management -->
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 bg-emerald rounded-lg flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-sitemap text-white text-sm"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-charcoal">Project & Program Management</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-badge"><i class="fas fa-list-check text-pistachio"></i> Agile/Scrum</span>
+            <span class="skill-badge"><i class="fas fa-diagram-project text-pistachio"></i> Stakeholder Alignment</span>
+            <span class="skill-badge"><i class="fas fa-people-arrows text-pistachio"></i> Cross-Functional Coordination</span>
+            <span class="skill-badge"><i class="fas fa-rotate text-pistachio"></i> Change Management</span>
+            <span class="skill-badge"><i class="fas fa-file-lines text-pistachio"></i> Documentation</span>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 bg-pistachio rounded-lg flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-wrench text-white text-sm"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-charcoal">Tools & Platforms</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-badge"><i class="devicon-github-original"></i> GitHub</span>
+            <span class="skill-badge"><i class="devicon-vscode-plain text-blue-500"></i> VS Code</span>
+            <span class="skill-badge"><i class="fas fa-check-double text-emerald"></i> QA Testing</span>
+            <span class="skill-badge"><i class="fas fa-database text-emerald"></i> LMS Systems</span>
+            <span class="skill-badge"><i class="fas fa-pen-ruler text-emerald"></i> Figma</span>
+            <span class="skill-badge"><i class="fas fa-table text-emerald"></i> Data Alignment</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- CTA SECTION -->
   <section class="py-20 bg-dark">
     <div class="max-w-6xl mx-auto px-6 text-center">
@@ -488,5 +586,6 @@
 
     </div>
   </footer>
+  <script src="nav.js"></script>
 </body>
 </html>
