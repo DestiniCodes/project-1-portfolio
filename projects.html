@@ -35,11 +35,11 @@
 </head>
 <body class="font-body bg-offwhite text-charcoal">
 
-  <!-- NAV -->
+  
   <nav class="fixed top-0 w-full bg-offwhite shadow-sm z-50">
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
       <a href="index.html" class="font-heading text-xl font-bold text-charcoal">Destini Harkins</a>
-      <ul class="hidden md:flex gap-8 items-center">
+      <ul id="nav-menu" class="hidden md:flex gap-8 items-center">
         <li><a href="index.html" class="text-charcoal hover:text-emerald transition-colors duration-200">Home</a></li>
         <li><a href="projects.html" class="text-emerald font-semibold">Coding Projects</a></li>
         <li><a href="pm-case-studies.html" class="text-charcoal hover:text-emerald transition-colors duration-200">PM Case Studies</a></li>
@@ -49,13 +49,13 @@
           <a href="assets/resume.pdf" class="bg-emerald text-white px-5 py-2 rounded hover:bg-dark transition-colors duration-200">Resume</a>
         </li>
       </ul>
-      <button class="md:hidden text-charcoal text-2xl">
+      <button id="hamburger-btn" class="md:hidden text-charcoal text-2xl">
         <i class="fas fa-bars"></i>
       </button>
     </div>
   </nav>
 
-  <!-- PAGE HEADER -->
+  
   <section class="pt-32 pb-12 bg-offwhite">
     <div class="max-w-6xl mx-auto px-6">
       <p class="section-badge">Portfolio</p>
@@ -67,13 +67,13 @@
     </div>
   </section>
 
-  <!-- PROJECTS GRID -->
+  
   <section class="py-16 bg-offwhite">
     <div class="max-w-6xl mx-auto px-6">
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <!-- BRANCHING STORY GAME -->
+        
         <div class="bg-white rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 border-t-4 border-pistachio">
           <div class="h-52 bg-dark flex items-center justify-center">
             <i class="fas fa-map text-emerald text-6xl"></i>
@@ -100,7 +100,7 @@
           </div>
         </div>
 
-        <!-- PLACEHOLDER 2 -->
+        
         <div class="bg-white rounded-xl overflow-hidden border-2 border-dashed border-gray-300">
           <div class="h-52 bg-gray-100 flex items-center justify-center">
             <i class="fas fa-clock text-gray-300 text-5xl"></i>
@@ -112,7 +112,7 @@
           </div>
         </div>
 
-        <!-- BOOK FESTIVAL -->
+        
         <div class="bg-white rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 border-t-4 border-emerald">
           <div class="h-52 bg-offwhite flex items-center justify-center">
             <i class="fas fa-book-open text-emerald text-6xl"></i>
@@ -145,7 +145,7 @@
     </div>
   </section>
 
-  <!-- HOW I BUILD -->
+  
   <section class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-6">
 
@@ -196,7 +196,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  
   <footer class="bg-dark border-t border-gray-700 py-10">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row justify-between items-center gap-6">
@@ -226,5 +226,6 @@
     </div>
   </footer>
 
+  <script src="nav.js"></script>
 </body>
 </html>

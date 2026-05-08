@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design Preview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #F8F7F4;
+      --text: #2D2D2D;
+      --emerald: #4E7C5F;
+      --dark: #1C2B2A;
+      --sage: #EAF0EC;
+      --border: #E0E0E0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      padding: 80px 60px;
+      background-color: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero p.eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--emerald);
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 56px;
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero p.subtitle {
+      font-size: 18px;
+      color: #666;
+      max-width: 520px;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+
+    .btn-primary {
+      background-color: var(--emerald);
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      cursor: pointer;
+      margin-right: 12px;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover { background-color: #3a6349; }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--emerald);
+      padding: 14px 28px;
+      border: 2px solid var(--emerald);
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-outline:hover {
+      background-color: var(--sage);
+    }
+
+    /* COLOR PALETTE SECTION */
+    .palette {
+      padding: 60px;
+      background-color: white;
+    }
+
+    .palette h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+
+    .swatches {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .swatch {
+      text-align: center;
+    }
+
+    .swatch-box {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      margin-bottom: 8px;
+    }
+
+    .swatch p {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .swatch strong {
+      font-size: 13px;
+      display: block;
+    }
+
+    /* CARDS SECTION */
+    .cards-section {
+      padding: 60px;
+      background-color: var(--bg);
+    }
+
+    .cards-section h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .cards-section p.intro {
+      color: #666;
+      margin-bottom: 32px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px;
+      width: 280px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .card .tag {
+      font-size: 12px;
+      color: var(--emerald);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* DARK SECTION */
+    .dark-section {
+      padding: 80px 60px;
+      background-color: var(--dark);
+      color: white;
+      text-align: center;
+    }
+
+    .dark-section h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 42px;
+      margin-bottom: 16px;
+      color: white;
+    }
+
+    .dark-section p {
+      font-size: 18px;
+      color: #a0b8a8;
+      margin-bottom: 36px;
+    }
+
+    /* FONT PREVIEW */
+    .fonts-section {
+      padding: 60px;
+      background-color: var(--sage);
+    }
+
+    .fonts-section h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 28px;
+      margin-bottom: 32px;
+    }
+
+    .font-row {
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .font-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--emerald);
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <section class="hero">
+    <p class="eyebrow">Portfolio</p>
+    <h1>Destini Harkins</h1>
+    <p class="subtitle">Project manager brain. Developer energy. Building at the intersection of systems thinking and full stack development.</p>
+    <button class="btn-primary">View My Work</button>
+    <button class="btn-outline">Download Resume</button>
+  </section>
+
+  
+  <section class="palette">
+    <h2>Color Palette</h2>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-box" style="background:#F8F7F4;"></div>
+        <strong>Background</strong>
+        <p>#F8F7F4</p>
+      </div>
+      <div class="swatch">
+        <div class="swatch-box" style="background:#2D2D2D;"></div>
+        <strong>Text</strong>
+        <p>#2D2D2D</p>
+      </div>
+      <div class="swatch">
+        <div class="swatch-box" style="background:#4E7C5F;"></div>
+        <strong>Emerald</strong>
+        <p>#4E7C5F</p>
+      </div>
+      <div class="swatch">
+        <div class="swatch-box" style="background:#1C2B2A;"></div>
+        <strong>Dark</strong>
+        <p>#1C2B2A</p>
+      </div>
+      <div class="swatch">
+        <div class="swatch-box" style="background:#EAF0EC;"></div>
+        <strong>Sage</strong>
+        <p>#EAF0EC</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="fonts-section">
+    <h2>Font Pairing</h2>
+    <div class="font-row">
+      <p class="font-label">Playfair Display — Headings</p>
+      <h1 style="font-family:'Playfair Display',serif; font-size:48px;">Program & Systems Leadership</h1>
+    </div>
+    <div class="font-row">
+      <p class="font-label">Inter — Body Text</p>
+      <p style="font-size:16px; line-height:1.7; max-width:600px;">I bring a decade of project management experience into the world of full stack development — combining strategic thinking with hands-on technical skills to build tools that actually work for people.</p>
+    </div>
+  </section>
+
+  
+  <section class="cards-section">
+    <h2>Featured Work</h2>
+    <p class="intro">A look at what I build and what I lead.</p>
+    <div class="cards">
+      <div class="card">
+        <p class="tag">Coding Project</p>
+        <h3>Portfolio Website</h3>
+        <p>A responsive multi-page portfolio built with HTML, CSS, and Tailwind. Designed to tell a story.</p>
+      </div>
+      <div class="card">
+        <p class="tag">PM Case Study</p>
+        <h3>Financial Literacy Program</h3>
+        <p>Led design and delivery of a curriculum serving 500+ participants across three cohorts.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Coding Project</p>
+        <h3>Recipe Finder App</h3>
+        <p>Vanilla JS app using the MealDB API with favorites tracking and detailed recipe views.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="dark-section">
+    <h2>Let's Work Together</h2>
+    <p>Project manager brain. Developer energy.</p>
+    <button class="btn-primary">Get In Touch</button>
+  </section>
+
+  <script src="nav.js"></script>
+</body>
+</html>
